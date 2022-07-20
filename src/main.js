@@ -1,8 +1,23 @@
 import Vue from 'vue'
-import App from './App.vue'
+import axios from 'axios';
+import VueAxios from 'vue-axios';
+import $ from 'jquery';
+import 'vue-loading-overlay/dist/vue-loading.css';
+import 'bootstrap';
+
+import App from './App.vue';
+import router from './router';
 
 Vue.config.productionTip = false
-
+Vue.use(VueAxios, axios);
+window.$ = $;
+axios.defaults.withCredentials = true;
 new Vue({
-  render: h => h(App),
+  router,
+  data: function() {
+    return {
+      title: '',
+    }
+  },
+  render: h => h(App)
 }).$mount('#app')

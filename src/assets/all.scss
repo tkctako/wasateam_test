@@ -1,0 +1,52 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/bootstrap';
+
+$primary-color: #2c3e50;
+$secondary-color: #537124;
+$muted-color: #50545b;
+
+.home-title{
+  font-size: $h1-font-size;
+  font-weight: 500;
+} 
+.section-title{
+  font-size: $h2-font-size;
+  font-weight: 500;
+} 
+.section-subTitle{
+  font-size: $h3-font-size;
+  font-weight: 500;
+} 
+.section-description{
+  font-size: $h5-font-size;
+} 
+.step-title{
+  font-size: $h3-font-size;
+  color: $secondary-color;
+  font-weight: 600;
+}
+.step-content{
+  font-size: $h5-font-size;
+  font-weight: 700;
+} 
+
+input[type=text], select{
+  border-radius: 5px;
+  border: 0;
+  outline: 2px #aac47d solid;
+  &:focus{
+    outline: 1px #93ad65 solid;
+    box-shadow: unset;
+  }
+}
+input[type=radio]{
+  background-color: #c7dba6;
+}
+input[type=radio]:checked{
+  color: #93ad65; 
+  background-color: #93ad65;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}

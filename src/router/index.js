@@ -8,20 +8,44 @@ const routes = [
   {
     path: '/',   
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    meta: {
+      title: '選擇輸入樣式',
+      description: '透過下拉式表單，來選擇輸入樣式。',
+      backgroundColor: '#dddeee'
+    }
   },
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import('../views/AboutView.vue'),
+    meta: {
+      title: '串接列表資料',
+      description: '呼叫假的API，來串接列表資料，資料來源自https://wasateam.com/。',
+      backgroundColor: '#e7eedd'
+    }
   }
 ]
 
 const router = new VueRouter({
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  if (to.meta.description) {
+    document
+    .querySelector('meta[name="description"]')
+    .setAttribute('content', to.meta.description);
+  }
+  if (to.meta.backgroundColor) {
+    document
+    .querySelector("body")
+    .setAttribute("style", `background-color: ${ to.meta.backgroundColor }`);
+  }
+  next();
 })
 
 export default router
