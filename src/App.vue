@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>-</h1>
+    <h1>山葵組線上測驗</h1>
     <nav>
       <router-link to="/">選擇輸入樣式</router-link> |
       <router-link to="/about">串接列表資料</router-link>

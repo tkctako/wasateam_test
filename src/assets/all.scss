@@ -39,13 +39,6 @@ input[type=text], select{
     box-shadow: unset;
   }
 }
-input[type=radio]{
-  background-color: #c7dba6;
-}
-input[type=radio]:checked{
-  color: #93ad65; 
-  background-color: #93ad65;
-}
 a {
   text-decoration: none;
   transition: all 0.3s;
