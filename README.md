@@ -2,12 +2,12 @@
 
 ## 以scss撰寫內容樣式 (1)
 ```
-由 assets/all.scss 管理顏色以及字體大小，讓 css 的維護性提升。
+由 assets/all.scss 統一管理顏色以及字體大小，讓 css 的維護性提升。
 ```
 
 ## 選擇輸入樣式 (2 ~ 5)
 ```
-透過選單 select 的 :v-model 傳遞訊息到子元件 MyType ，由 v-if 的方式顯示出選擇的輸入樣式。
+透過選單 select 的 :v-model 切換 prop 到子元件 MyType ，由 v-if 的方式顯示出選擇的輸入樣式。
 ```
 
 ## 可切換頁面 (6)
