@@ -22,7 +22,7 @@
 
 ## 設定Global參數、讓頁面主題會隨著更換 (8)
 ```
-在 main.js 設定全域變數 title 並 computed 在 主頁   App.vue 裡 ，切換頁面時，在 created 階段改動全域變數  title，頁面主題就會替換成該分頁的主題。
+在 main.js 設定全域變數 title 並 computed 在主頁 App.vue 裡，切換頁面時，在 created 階段改動全域變數  title，頁面主題就會替換成該分頁的主題。
 ```
 ## 串接列表資料 (9)
 ```
