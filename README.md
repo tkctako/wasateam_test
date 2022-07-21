@@ -1,5 +1,11 @@
 # 山葵組線上測試
 
+## 頁面內容
+```
+views/HomeView.vue - 選擇輸入樣式
+views/AboutView.vue - 串接列表資料
+```
+
 ## 以scss撰寫內容樣式 (1)
 ```
 由 assets/all.scss 統一管理顏色以及字體大小，讓 css 的維護性提升。
